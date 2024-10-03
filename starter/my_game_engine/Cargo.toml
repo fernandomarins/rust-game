@@ -1,0 +1,25 @@
+[package]
+name = "my_game_engine"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "my_game_engine"
+path = "src/lib.rs"
+
+[[bin]]
+name = "my_game_engine_executable"
+path = "src/main.rs" 
+
+[dependencies]
+gl = "0.14"
+image = "0.24"
+
+[build-dependencies]
+cc = "1.0"
+
+[dependencies.glfw]
+version = "*"
+
+[dependencies.glfw-sys]
+version = "*"
